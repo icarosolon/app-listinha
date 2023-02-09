@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:todo/src/shared/widgets/custom_drawer.dart';
-import 'package:todo/src/shared/widgets/user_image_button.dart';
+import 'package:todo/src/home/widgets/custom_drawer.dart';
+import 'package:todo/src/home/widgets/user_image_button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton.extended(
           onPressed: (){
-
+            Navigator.of(context).pushNamed('./edit');
           },
           icon: const Icon(Icons.edit),
           label: const Text('Nova Lista')
