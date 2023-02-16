@@ -34,7 +34,7 @@ SegmentedButtonThemeData get _segmentButtonTheme => SegmentedButtonThemeData(
             );
           }
           return const TextStyle(
-            fontSize: 12,
+            fontSize: 12, 
 
           );
         })
